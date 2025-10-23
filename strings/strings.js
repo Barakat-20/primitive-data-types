@@ -22,7 +22,7 @@ let getMyDataType = "This is a string"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let gotDataType = 'string'
+let gotDataType = typeof getMyDataType
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -39,7 +39,6 @@ let getMyLenght = "Get the length of this string"
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
 let myLength = getMyLenght.length
-console.log(myLength.length)
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -77,7 +76,7 @@ let subString = "out"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringContains = true
+let stringContains = mainString.includes(subString)
 
 
 ////////////////////////////////////////////////////////////////////////
@@ -96,7 +95,9 @@ let subStringIgnoreCase = "friends"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringContainsIgnoreCase = true
+mainStringIgnoreCase = mainStringIgnoreCase.toLowerCase()
+subStringIgnoreCase = subStringIgnoreCase.toLowerCase()
+let stringContainsIgnoreCase = mainStringIgnoreCase.includes(subStringIgnoreCase)
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -178,7 +179,7 @@ let checkEquality2 = "Are we equal?"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringsAreEqual = true
+let stringsAreEqual = checkEquality1 === checkEquality2
 
 ////////////////////////////////////////////////////////////////////////
 
@@ -196,7 +197,7 @@ let checkEqualityIgnoreCase2 = "are we EQUAL?"
 //
 ////////////////////// YOUR CODE BELOW THIS LINE ///////////////////////
 
-let stringsAreEqualIgnoreCase = true
+let stringsAreEqualIgnoreCase = checkEqualityIgnoreCase1.toLowerCase() === checkEqualityIgnoreCase2.toLowerCase()
 
 ////////////////////////////////////////////////////////////////////////
 
